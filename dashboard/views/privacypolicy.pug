@@ -1,0 +1,47 @@
+doctype html
+head
+  include includes/header.pug
+  link(rel='stylesheet' href='./css/index.css')
+
+body
+  include includes/navbar.pug
+  .container(style='max-width:980px;')
+    #gap.jumbotron.text-center.bg-transparent
+      h1.display-3
+        | Privacy Policy
+      p.lead By using Oogie Boogie Bot, you agree to the following privacy policy.
+
+  .container(style='max-width:1080px;')
+    hr
+
+  .container(style='max-width:980px;')
+    #stopgap.jumbotron.bg-transparent
+      h2
+        | What information is stored?
+      p To log activity, Oogie Boogie bot only stores your id, usertag, how many messages you've sent and the voice activity.
+      p If you have set up autoroles and muted roles in the server, the bot also stores information about the role and server.
+      p If you have been muted, information about your mute will be stored.
+      p Oogie Boogie Bot also stores information about the economy system for each user.
+      p If a specific channels like voice logging have been set up, the bot will store information about the channel.
+
+      h2
+        | Why we store the information and how we use it
+      p These information is stored so that the bot can automative tasks efficiently.
+      p Information about role ids and channel ids are needed for automating modding and logging.
+
+      h2
+        | Who gets this data?
+      p No one gets this data.
+
+      h2
+        | 3rd Party Data Sharing
+      p The data is being stored in Mongo Atlas. 
+
+      h2
+        | Questions and concerns
+      p If you have questions or concerns, you can join the discord server 
+        a(href='/invite') here
+      p You can also contact the owner, ESC#3777 for any further questions.
+      p If you would also like your data to be removed, you can contact the owner or join the server too.
+
+  include includes/footer.pug

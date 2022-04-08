@@ -1,0 +1,61 @@
+.jumbotron{
+    padding: 0;
+}
+
+body{
+    background-color: bisque;
+}
+
+#invite{
+    margin: 4px;
+    background-color: rgb(76, 149, 218);
+    border-color: transparent;
+}
+
+body{
+    background-color: #212529;
+    /* background-color: bisque; */
+    color: white;
+}
+
+h1 {
+    color: #8cc2f5;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #8cc2f5;
+}
+
+i {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+footer{
+    margin-top: 15vh;
+}
+
+span {
+    padding-left: 5px;
+}
+
+#stats{
+    padding-bottom: 5vh;
+}
+
+#gap{
+    margin-top: 15vh;
+}
+
+#stopgap{
+    margin-top: 5vh;
+}
+
+#mainbuts{
+    margin: 4px;
+}
+
+#stats{
+    margin-top: 2vh;
+}

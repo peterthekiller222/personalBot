@@ -1,0 +1,42 @@
+{
+  "name": "oogieboogiebot",
+  "version": "1.0.0",
+  "description": "Discord Bot created by ESC#3777",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eansengchang/OogieBoogieBot.git"
+  },
+  "author": "ESC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eansengchang/OogieBoogieBot/issues"
+  },
+  "homepage": "https://github.com/eansengchang/OogieBoogieBot#readme",
+  "engines": {
+    "node": "16.6.x"
+  },
+  "dependencies": {
+    "@iamtraction/google-translate": "^1.1.2",
+    "discord.js": "^13.6.0",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.1",
+    "mathjs": "^10.1.0",
+    "module-alias": "^2.2.2",
+    "mongoose": "^6.1.8",
+    "node-fetch": "^2.6.1",
+    "npm": "^8.4.0",
+    "pug": "^3.0.2"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@models": "./models",
+    "@commands": "./commands/commands",
+    "@utils": "./utils",
+    "@events": "./events/events"
+  }
+}

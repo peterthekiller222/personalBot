@@ -1,0 +1,53 @@
+.jumbotron{
+    padding-bottom: 0;
+}
+
+.row{
+    margin:1vh;
+    padding:1vh;
+}
+
+body{
+    background-color: #212529;
+    /* background-color: bisque; */
+    color: white;
+}
+
+#dropdownBut{
+    margin-top: 10px;
+    background-color: #88bdda;
+    padding: 10px;
+    
+}
+
+.card{
+    margin: 0;
+    background-color: #4fa2cf;
+    padding:10px;
+}
+
+p{
+    margin: 0px;
+    font-size: 18px;
+    color: white;
+    padding:0;
+}
+
+footer{
+    margin-top: 15vh;
+}
+
+i {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+span {
+    padding-left: 5px;
+}
+
+
+#subjumbotron {
+    margin: 1vh;
+    padding: 1vh;
+}

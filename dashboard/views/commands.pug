@@ -1,0 +1,40 @@
+doctype html
+head
+  include includes/header.pug
+  link(rel='stylesheet', href='./css/commands.css')
+
+body
+  include includes/navbar.pug
+
+  .container(style='max-width:980px;')
+    .jumbotron.text-center.bg-transparent
+      h1.display-2 Commands
+      hr
+    each category in categories
+      #subjumbotron.jumbotron.text-center.bg-transparent
+        p.h1 #{category.name} Commands
+      .row
+        each command in category.commands
+          button.btn.btn-dark(id='dropdownBut', type='button', data-bs-toggle='collapse', data-bs-target='#'+command.name, aria-expanded='false', aria-controls=command.name)
+            p.text-left(style='color:black') e #{command.name} #{command.expectedArgs || ''}
+          .collapse(id=command.name)
+            .card.card-body
+              p(style='color:black') #{command.description}
+              if command.aliases
+                p(style='color:black;font-size:15px') Other aliases: #{command.aliases.join(', ')}
+
+    //- section(id='nsfw commands')
+    //-   .row
+    //-     button.btn.bg-transparent(style = 'margin:0;padding:0',type='button', data-bs-toggle='collapse', data-bs-target='#collapseNSFW', aria-expanded='false', aria-controls='collapseNSFW')
+    //-       p.h2(style='background-color:#2c363f;margin:0;padding:5px') NSFW commands
+      
+    //-   #collapseNSFW.collapse
+    //-     .row
+    //-       each command in nsfwCommands
+    //-         button.btn(id='dropdownBut', type='button', data-bs-toggle='collapse', data-bs-target='#'+command.name, aria-expanded='false', aria-controls=command.name)
+    //-           p.text-left(style='color:black') e #{command.name} #{command.expectedArgs || ''}
+    //-         .collapse(id=command.name)
+    //-           .card.card-body
+    //-             p(style='color:black') #{command.description}
+  
+  include includes/footer.pug
