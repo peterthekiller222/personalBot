@@ -25,7 +25,7 @@
     "discord.js": "^13.6.0",
     "dotenv": "^14.3.2",
     "express": "^4.17.1",
-    "mathjs": "^10.1.0",
+    "mathjs": "^10.5.2",
     "module-alias": "^2.2.2",
     "mongoose": "^6.1.8",
     "node-fetch": "^2.6.1",
